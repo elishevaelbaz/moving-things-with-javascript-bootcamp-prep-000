@@ -13,14 +13,14 @@ function moveDodgerLeft() {
 }
 
 
-function moveDodgerRight() {
-  var rightNumbers = dodger.style.right.replace('px', '')
-  var right = parseInt(rightNumbers, 10)
+// function moveDodgerRight() {
+//   var rightNumbers = dodger.style.right.replace('px', '')
+//   var right = parseInt(rightNumbers, 10)
  
-  if (right < 180) {
-    dodger.style.right = `${right - 1}px`
-  }
-}
+//   if (right < 180) {
+//     dodger.style.right = `${right - 1}px`
+//   }
+// }
 
 
 
@@ -28,7 +28,7 @@ document.addEventListener('keydown', function(e) {
   if (e.which === 37) {
     moveDodgerLeft()
   }
-   if (e.which === 38) {
-    moveDodgerRight()
-  }
+  // if (e.which === 38) {
+  //   moveDodgerRight()
+  // }
 })
